@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TP5 - TMDB</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>TMDB</h1>
+      <form>
+        <select name="lang" id="lang">
+          <option value="fr-FR">Français</option>
+          <option value="en-US">English</option>
+        </select>
+      </form>
+    </header>
+
+    <form method="post" id="search-form">
+      <label for="search">Rechercher un film</label>
+      <input type="text" name="search" id="search" />
+      <button type="submit">Rechercher</button>
+    </form>
+    <ul id="results"></ul>
+    <ul id="pages"></ul>
+  </body>
+</html>
